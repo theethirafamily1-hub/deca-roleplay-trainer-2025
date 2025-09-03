@@ -2,10 +2,77 @@ import streamlit as st
 import random
 
 roleplay_questions = [
-    {"question": "How would you increase sales for a small retail store?", "keywords": ["social media", "promotion", "ads", "marketing"]},
-    {"question": "A customer complains about a product. How would you handle it?", "keywords": ["listen", "empathy", "solution", "customer service"]},
-    {"question": "How would you launch a new product in a competitive market?", "keywords": ["research", "advertising", "target audience", "pricing"]},
-    {"question": "Your team has a limited budget for marketing. What strategy would you choose?", "keywords": ["budget", "ROI", "prioritize", "effective"]},
+    # ----------------------
+    # Marketing
+    # ----------------------
+    {"question": "How would you promote a new energy drink to teenagers?", 
+     "keywords": ["social media", "promotion", "influencers", "ads"]},
+    
+    {"question": "Sales at your clothing store are down. What marketing strategy would you use to increase traffic?", 
+     "keywords": ["discount", "advertising", "promotion", "social media"]},
+
+    {"question": "Your company is launching a new app. How would you generate excitement before launch?", 
+     "keywords": ["buzz", "advertising", "pre-launch", "campaign"]},
+
+    {"question": "You are asked to design a loyalty program for a coffee shop. What features would you include?", 
+     "keywords": ["points", "rewards", "discount", "customer loyalty"]},
+
+    {"question": "Your competitor is running a successful ad campaign. How would you respond?", 
+     "keywords": ["competitive", "advertising", "unique", "differentiate"]},
+
+    # ----------------------
+    # Customer Service
+    # ----------------------
+    {"question": "A customer is upset about a late delivery. How would you resolve the issue?", 
+     "keywords": ["apology", "solution", "customer service", "empathy"]},
+
+    {"question": "You are a store manager and a customer demands a refund against store policy. How do you handle it?", 
+     "keywords": ["policy", "solution", "empathy", "alternative"]},
+
+    {"question": "Your hotel received several negative online reviews. What steps would you take to address them?", 
+     "keywords": ["reviews", "response", "improvement", "service"]},
+
+    {"question": "A customer is waiting in line for a long time and becomes frustrated. How do you calm the situation?", 
+     "keywords": ["apology", "patience", "solution", "service"]},
+
+    {"question": "You are working at a restaurant and a customer claims their food is undercooked. What do you do?", 
+     "keywords": ["apology", "replace", "customer", "service"]},
+
+    # ----------------------
+    # Finance / Business
+    # ----------------------
+    {"question": "Your company has a limited budget. How would you decide what to spend on marketing?", 
+     "keywords": ["budget", "ROI", "prioritize", "effective"]},
+
+    {"question": "You are asked to prepare a budget for a small business. What categories should you include?", 
+     "keywords": ["expenses", "revenue", "marketing", "operations"]},
+
+    {"question": "Sales are dropping but expenses are rising. What financial strategy would you suggest?", 
+     "keywords": ["cut costs", "increase revenue", "budget", "efficiency"]},
+
+    {"question": "A business wants to expand into a new market. What financial factors should they consider?", 
+     "keywords": ["costs", "revenue", "profit", "investment"]},
+
+    {"question": "How would you help a company increase profit margins?", 
+     "keywords": ["reduce costs", "increase sales", "efficiency", "pricing"]},
+
+    # ----------------------
+    # Teamwork / Leadership
+    # ----------------------
+    {"question": "You are leading a group project and two members are arguing. How do you handle it?", 
+     "keywords": ["conflict", "mediate", "teamwork", "solution"]},
+
+    {"question": "Your team has a tight deadline and people are falling behind. What do you do?", 
+     "keywords": ["delegate", "prioritize", "support", "time management"]},
+
+    {"question": "A team member isn’t contributing. How would you motivate them?", 
+     "keywords": ["encourage", "communicate", "motivate", "support"]},
+
+    {"question": "You are a new manager. How would you build trust with your team?", 
+     "keywords": ["respect", "communication", "listening", "trust"]},
+
+    {"question": "Your team just finished a project successfully. How would you celebrate their achievement?", 
+     "keywords": ["recognition", "reward", "celebrate", "motivate"]},
 ]
 
 def score_response(user_response, keywords):
